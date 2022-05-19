@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body >
+    <div  class="container">
+        <section class="sec1">
+            <div class="head">
+            <H1  class="animate__animated animate__flipInY"><i>CALCULATOR </i></H1>
+            </div>
+          <div class="inptt"> <input id="input" class="inputt" type="text" placeholder="Enter A Number"></div>
+        </section>
+        <section class="sec2">
+            <table class="bhai" >
+            <tr>
+                <td onclick="tablevalue('7')">7</td>
+                <td onclick="tablevalue('8')">8</td>
+                <td onclick="tablevalue('9')">9</td>
+                <td onclick="tablevalue('0')"> 0</td>
+              
+            </tr>
+            <tr>
+                <td onclick="tablevalue('4')">4</td>
+                <td onclick="tablevalue('5')">5</td>
+                <td onclick="tablevalue('6')">6</td>
+                <td class="one" onclick="tablevalue('-')">-</td>
+            </tr>
+            <tr>
+                <td onclick="tablevalue('1')">1</td>
+                <td onclick="tablevalue('2')">2</td>
+                <td onclick="tablevalue('3')">3</td>
+                <td class="one" onclick="tablevalue('*')">*</td>
+            </tr>
+            <tr>
+                <td class="one" onclick="tablevalue('+')">+</td>
+                <td class="one" onclick="tablevalue('/')">/</td>
+                <td  class="one" onclick="valueRemove()"> C</td>
+                <td  class="one1" onclick="totalValue()"> =</td>
+
+            </tr>
+                <tr>
+                    <td class="one" onclick="allClear()"colspan="4"> AC</td>
+                </tr>
+         </td>
+        </td>
+            </table>
+        </section>
+     
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
